@@ -183,3 +183,48 @@ a { color: inherit; }
   html { scroll-behavior: auto; }
   .btn { transition: none; }
 }
+
+/* ---- Additions: tagline, about, FAQ, pre-order ---- */
+.nav-tag { font: 500 12.5px "Inter", sans-serif; color: var(--ink-soft); margin-left: 6px; padding-left: 12px; border-left: 1px solid var(--border); }
+
+.about-grid { display: grid; grid-template-columns: 1.4fr .6fr; gap: 48px; align-items: start; }
+.about-grid p { color: var(--ink-soft); font-size: 16.5px; }
+.mission { background: var(--accent-soft); border-radius: 12px; padding: 14px 16px; color: var(--ink) !important; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.chips span { background: #fff; border: 1px solid var(--border); border-radius: 999px; padding: 6px 14px; font-size: 13.5px; font-weight: 600; color: var(--accent-dark); }
+.team-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 22px; text-align: center; box-shadow: 0 14px 34px rgba(60,40,140,.1); }
+.avatar { width: 76px; height: 76px; border-radius: 50%; background: var(--grad); color: #fff; font: 700 32px "Poppins", sans-serif; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; }
+.team-card h3 { margin-bottom: 2px; }
+.team-card .role { color: var(--accent); font-weight: 600; font-size: 14px; margin-bottom: 12px; }
+.team-card .quote { font-size: 14.5px; font-style: italic; margin: 0; }
+
+.plan-alt { text-align: center; font-size: 13.5px; color: var(--ink-soft); margin: 10px 0 0; }
+.plan-alt a { color: var(--accent-dark); font-weight: 600; }
+
+.faq { margin-top: 28px; display: flex; flex-direction: column; gap: 10px; }
+.faq details { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 4px 18px; }
+.faq summary { cursor: pointer; font-weight: 600; padding: 14px 0; list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; font-size: 22px; line-height: 1; color: var(--accent); }
+.faq details[open] summary::after { content: "\2212"; }
+.faq details p { color: var(--ink-soft); margin: 0 0 16px; }
+
+.dialog { border: 0; border-radius: 18px; padding: 26px; width: min(440px, 100% - 32px); box-shadow: 0 30px 80px rgba(20,10,60,.35); color: var(--ink); }
+.dialog::backdrop { background: rgba(20,10,50,.55); }
+.dialog h3 { font-size: 22px; }
+.dialog-sub { color: var(--ink-soft); font-size: 14.5px; }
+.dialog label { display: block; font-size: 13px; font-weight: 600; margin: 12px 0 5px; }
+.dialog input[type=text], .dialog input[type=email] { width: 100%; padding: 11px 12px; border: 1.5px solid var(--border); border-radius: 10px; font: 15px "Inter", sans-serif; }
+.dialog input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(109,91,255,.18); }
+.dialog input.invalid { border-color: #e11d48; }
+.dialog fieldset { border: 0; padding: 0; margin: 14px 0 0; }
+.dialog legend { font-size: 13px; font-weight: 600; padding: 0; }
+.dialog .radio { font-weight: 500; font-size: 14.5px; display: flex; align-items: center; gap: 8px; margin: 8px 0 0; }
+.form-msg.dark { color: var(--accent-dark); }
+.dialog-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 14px; }
+.dialog-actions .btn { padding: 11px 18px; }
+
+@media (max-width: 860px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .nav-tag { display: none; }
+}
