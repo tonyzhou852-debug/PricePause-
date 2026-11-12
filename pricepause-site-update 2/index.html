@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PricePause — Take a breath before you buy</title>
+  <meta name="description" content="PricePause is a Chrome extension that finds you a better price and coupons before you hit Buy Now." />
+  <meta property="og:title" content="PricePause — Take a breath before you buy" />
+  <meta property="og:description" content="Find a better price in one click, before you check out." />
+  <meta property="og:image" content="assets/poster.jpg" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%236d5bff'/><text x='32' y='46' font-size='40' font-weight='700' text-anchor='middle' fill='white' font-family='Arial'>$</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="brand"><span class="brand-mark">$</span> PricePause <span class="nav-tag">Take a breath before you buy</span></a>
+      <nav class="nav-links">
+        <a href="#video">Video</a>
+        <a href="#how">How it works</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#about">About</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#waitlist" class="btn btn-small">Join waitlist</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Take a breath before you buy &middot; For impulsive buyers</p>
+          <h1>Before you hit <span class="hl">&ldquo;Buy Now&rdquo;</span>&hellip; take a breath.</h1>
+          <p class="lead">PricePause is a Chrome extension that finds you a better price and coupons in one click, so a split-second purchase doesn't turn into regret.</p>
+          <div class="hero-cta">
+            <a href="#waitlist" class="btn btn-primary">Join the waitlist</a>
+            <a href="#video" class="btn btn-ghost">&#9654; Watch the 72-second video</a>
+          </div>
+          <p class="fine">Free to start &middot; Premium from $4.99/mo</p>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="popup">
+            <div class="popup-head"><span class="brand-mark sm">$</span> PricePause <span class="popup-up">&#11088; Upgrade</span></div>
+            <div class="popup-body">
+              <div class="p-card">
+                <small>AMAZON.COM</small>
+                <strong>Wireless Noise-Cancelling Headphones</strong>
+                <div class="p-price">$349.99 <small>current price</small></div>
+              </div>
+              <div class="p-banner">&#9208; Hold up &mdash; we found 3 better options.</div>
+              <div class="p-deal best"><span>TechBay <em>BEST</em></span><b>$305.50 <i>save $44.49</i></b></div>
+              <div class="p-deal"><span>MegaMart</span><b>$319.00 <i>save $30.99</i></b></div>
+              <div class="p-deal"><span>ShopNow</span><b>$329.99 <i>save $20.00</i></b></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section id="video" class="section alt">
+      <div class="container narrow">
+        <h2>See it in 72 seconds</h2>
+        <p class="sub">The problem, the demo, and why it works.</p>
+        <div class="video-wrap">
+          <video controls preload="metadata" poster="assets/poster.jpg" playsinline>
+            <source src="assets/pricepause_explainer.mp4" type="video/mp4" />
+            Your browser doesn't support embedded video.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="section">
+      <div class="container narrow center">
+        <h2>Impulse buys are easy. Overpaying is the hidden cost.</h2>
+        <p class="sub">You see it, you want it, you click. Then you find the same item for less somewhere else, and it's too late.</p>
+        <div class="stat-row">
+          <div class="stat"><b>1 click</b><span>from &ldquo;want&rdquo; to &ldquo;bought&rdquo;</span></div>
+          <div class="stat"><b>Many tabs</b><span>to compare prices by hand</span></div>
+          <div class="stat"><b>0</b><span>coupons tried before checking out</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="section alt">
+      <div class="container">
+        <h2 class="center">How it works</h2>
+        <div class="grid-3">
+          <article class="card">
+            <div class="num">1</div>
+            <h3>Shop like normal</h3>
+            <p>PricePause detects the product and price on the page, or you can type any product name into the search box.</p>
+          </article>
+          <article class="card">
+            <div class="num">2</div>
+            <h3>Pause &amp; compare</h3>
+            <p>Click the extension and see live prices from other retailers, with the cheapest one flagged for you.</p>
+          </article>
+          <article class="card">
+            <div class="num">3</div>
+            <h3>Save</h3>
+            <p>Grab a coupon, pick the better deal, and watch your running &ldquo;you've saved&rdquo; total go up.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section id="benefits" class="section">
+      <div class="container">
+        <h2 class="center">Why PricePause</h2>
+        <div class="grid-3">
+          <article class="card benefit">
+            <div class="icon">&#9889;</div>
+            <h3>Convenience</h3>
+            <p>One click replaces opening five tabs. It works right on the page you're already shopping on.</p>
+          </article>
+          <article class="card benefit">
+            <div class="icon">&#128176;</div>
+            <h3>Real prices</h3>
+            <p>Comparisons come from Google Shopping, so you see what shoppers can actually buy it for.</p>
+          </article>
+          <article class="card benefit">
+            <div class="icon">&#9208;&#65039;</div>
+            <h3>Built for impulse</h3>
+            <p>Other tools just find coupons. PricePause is designed to give you a calm second thought right when you need it.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section alt">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">About us</p>
+          <h2>Our story</h2>
+          <p>PricePause started with a gaming computer. I wanted one so badly that I bought it on Amazon for <b>$1,800</b> without comparing a single other store. Three weeks later, I found the exact same computer on another site for <b>$1,260</b>. That was $540 I could have kept, and by then it was too late.</p>
+          <p>I realized I wasn't bad with money, I was just fast. The excitement of &ldquo;I want it&rdquo; beat the patience of checking around. So I built PricePause, a Chrome extension that steps in at that exact moment. It spots the product you're looking at, pulls live prices from Google Shopping, and lines up coupons so you can compare in one click. It began as a school project, and the coupon feature is still a prototype that we're improving.</p>
+          <p class="mission"><b>Our mission:</b> we help impulsive buyers spend smarter by pausing them before checkout and surfacing better prices and coupons.</p>
+          <div class="chips">
+            <span>Calm</span><span>Smart</span><span>Encouraging</span><span>Trustworthy</span>
+          </div>
+        </div>
+        <aside class="team-card">
+          <!-- Edit the name and role below to match your team -->
+          <div class="avatar">T</div>
+          <h3>Tony</h3>
+          <p class="role">Founder &amp; builder</p>
+          <p class="quote">&ldquo;I overpaid by $540 because I didn't pause. PricePause is the tool I wish I'd had.&rdquo;</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section alt">
+      <div class="container narrow">
+        <h2 class="center">Simple pricing</h2>
+        <p class="sub center">Start free. Upgrade only if you shop a lot.</p>
+
+        <div class="toggle" role="tablist" aria-label="Billing period">
+          <button class="toggle-opt active" data-plan="monthly" role="tab" aria-selected="true">Monthly</button>
+          <button class="toggle-opt" data-plan="yearly" role="tab" aria-selected="false">Yearly <span class="save">save 33%</span></button>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="plan">
+            <h3>Free</h3>
+            <p class="price">$0</p>
+            <ul>
+              <li>15 live price searches / month</li>
+              <li>Auto product detection</li>
+              <li>Manual product search</li>
+              <li>Savings tracker</li>
+            </ul>
+            <a href="#waitlist" class="btn btn-ghost block">Get started</a>
+          </article>
+          <article class="plan featured">
+            <span class="tag">Most popular</span>
+            <h3>Premium</h3>
+            <p class="price"><span id="planPrice">$4.99</span><small id="planPer">/month</small></p>
+            <ul>
+              <li><b>Unlimited</b> live price searches</li>
+              <li>Everything in Free</li>
+              <li>Priority for new features</li>
+            </ul>
+            <button type="button" class="btn btn-primary block" data-open-preorder>Pre-order Premium</button>
+            <p class="plan-alt">or <a href="#waitlist">just join the waitlist</a></p>
+          </article>
+        </div>
+        <p class="fine center">Prototype pricing for a school project. No payment is taken on this site.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container narrow">
+        <h2 class="center">Questions, answered</h2>
+        <div class="faq">
+          <details>
+            <summary>Is PricePause free?</summary>
+            <p>Yes to start. The free plan includes 15 live price searches a month. Premium gives you unlimited searches for $4.99/month or $39.99/year.</p>
+          </details>
+          <details>
+            <summary>Where do the prices come from?</summary>
+            <p>Live comparisons come from Google Shopping, so you're seeing what other retailers are actually listing right now.</p>
+          </details>
+          <details>
+            <summary>Which stores does it work on?</summary>
+            <p>It detects products automatically on Amazon, Walmart, Target, Best Buy, Etsy, eBay and Shopify stores. You can also type any product name into the search box on any site.</p>
+          </details>
+          <details>
+            <summary>What does it do with my data?</summary>
+            <p>It reads the product name and price on the page you're viewing and uses the product name to look up prices. Your savings total and monthly search count stay in your own browser.</p>
+          </details>
+          <details>
+            <summary>When can I get it?</summary>
+            <p>PricePause is a working prototype right now. Join the waitlist or pre-order Premium and we'll let you know when it's ready.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- WAITLIST -->
+    <section id="waitlist" class="section cta">
+      <div class="container narrow center">
+        <h2>Be first to pause before you buy</h2>
+        <p class="sub light">Join the waitlist and we'll let you know when PricePause is ready.</p>
+        <form id="waitlistForm" class="form" novalidate>
+          <label for="email" class="sr-only">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+          <button type="submit" class="btn btn-white">Join waitlist</button>
+        </form>
+        <p id="formMsg" class="form-msg" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="brand"><span class="brand-mark sm">$</span> PricePause</span>
+      <span>Take a breath before you buy. &middot; A student project, 2026.</span>
+    </div>
+  </footer>
+
+  <!-- PRE-ORDER (demo) -->
+  <dialog id="preorderDialog" class="dialog" aria-labelledby="preorderTitle">
+    <form id="preorderForm" method="dialog" novalidate>
+      <h3 id="preorderTitle">Pre-order Premium</h3>
+      <p class="dialog-sub">Reserve unlimited searches. <b>Demo only: no payment is taken.</b></p>
+
+      <label for="poName">Name</label>
+      <input type="text" id="poName" autocomplete="name" placeholder="Your name" required />
+
+      <label for="poEmail">Email</label>
+      <input type="email" id="poEmail" autocomplete="email" placeholder="you@example.com" required />
+
+      <fieldset>
+        <legend>Plan</legend>
+        <label class="radio"><input type="radio" name="plan" value="monthly" checked /> Monthly &middot; $4.99/mo</label>
+        <label class="radio"><input type="radio" name="plan" value="yearly" /> Yearly &middot; $39.99/yr <span class="save">save 33%</span></label>
+      </fieldset>
+
+      <p id="preorderMsg" class="form-msg dark" role="status" aria-live="polite"></p>
+
+      <div class="dialog-actions">
+        <button type="button" class="btn btn-ghost" id="preorderCancel">Close</button>
+        <button type="submit" class="btn btn-primary">Reserve my spot</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
